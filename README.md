@@ -17,7 +17,7 @@ pip install -r .\requirements.txt
 ### Local Testing
 ```powershell
 . .\workenv\Scripts\activate
-.\\main.py
+.\main.py
 ```
 
 ### Pack Distribution

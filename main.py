@@ -7,7 +7,7 @@ from datetime import datetime, timedelta
 from PySide6.QtWidgets import QApplication
 from PySide6.QtGui import QIcon
 
-import logger, config, outlook, bot, qt
+import helper.logger as logger, helper.config as config, helper.outlook as outlook, helper.bot as bot, qt
 
 class main:
     def __init__(self):

@@ -1,0 +1,11 @@
+telegram:
+  token: ""
+  admin: 0
+
+outlook:
+  keyword: "今日上班刷卡時間通知"
+
+window:
+  font: "Consolas"
+  size: 20
+  color: "#EC407A"

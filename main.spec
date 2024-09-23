@@ -3,7 +3,7 @@
 
 a = Analysis(
     ['main.py'],
-    pathex=[],
+    pathex=['helper'],
     binaries=[],
     datas=[('suitcase.png', '.'), ('config.yml', '.')],
     hiddenimports=[],

@@ -12,8 +12,9 @@ from helper import logger, config, outlook, bot, qt
 class main:
     def __init__(self):
         self.base_path = pathlib.Path(__file__).parent.resolve()
-        self.logger = logger.init_logging()
         self.configs = config.config(f'{self.base_path}/config.yml')
+
+        self.logger = logger.init_logging(self.configs.get('logger', 'type'))
         self.tgbot = bot.bot(self.configs.get('telegram', 'token'))
         self.admin = self.configs.get('telegram', 'admin')
         self.outlook = outlook.outlook(self.configs.get('outlook', 'keyword'))

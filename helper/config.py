@@ -1,9 +1,7 @@
-import logging
 import yaml
 
 class config:
     def __init__(self, file_path):
-        logging.info(f'loading config from {file_path}')
         self.data = self.read_yaml(file_path)
 
     def read_yaml(self, file_path):

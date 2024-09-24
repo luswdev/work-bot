@@ -61,7 +61,12 @@ class main:
 
     def show_app(self, start_time):
         sys.argv = ['-platform', 'windows:darkmode=2']
-        self.app = QApplication(sys.argv)
+
+        if not QApplication.instance():
+            self.app = QApplication(sys.argv)
+        else:
+            self.app = QApplication.instance()
+
         self.app.setStyle('Fusion')
         self.app.setWindowIcon(QIcon(f'{self.base_path}/suitcase.png'))
 
